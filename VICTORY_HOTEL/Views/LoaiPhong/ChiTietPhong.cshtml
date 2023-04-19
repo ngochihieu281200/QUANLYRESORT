@@ -1,0 +1,180 @@
+﻿@model VICTORY_HOTEL.Models.LOAIPHONG
+@{
+    ViewBag.Title = "ChiTietPhong";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (VICTORY_HOTEL.Models.LOAIPHONG c in ViewBag.LoaiPhong)
+{
+    <div id="gdlr-header-substitute"></div>
+    <div class="gdlr-page-title-wrapper" style="background-image: url('/Images/gk_central_hotel_01.jpg'); ">
+        <div class="gdlr-page-title-overlay"></div>
+        <div class="gdlr-page-title-container container">
+            <h3 class="gdlr-page-title">@c.TenLoaiPhong</h3>
+        </div>
+    </div>
+    <!-- is search -->
+    <div class="content-wrapper">
+        <div class="gdlr-content">
+            <div class="with-sidebar-wrapper">
+                <div class="with-sidebar-container container gdlr-class-no-sidebar">
+                    <div class="with-sidebar-left twelve columns">
+                        <div class="with-sidebar-content twelve columns">
+                            <div class="gdlr-item gdlr-item-start-content">
+                                <div id="room-3596" class="post-3596 room type-room status-publish has-post-thumbnail hentry room_category-loai-phong room_tag-phong room_tag-signature">
+                                    <!--Dat phong-->
+                                    @*<form class="gdlr-reservation-bar" id="gdlr-reservation-bar" data-action="gdlr_hotel_booking" method="post" action="/LoaiPhong/DatPhong_Buoc3">
+                                        <div class="gdlr-reservation-bar-title">Đặt phòng của bạn</div>
+                                        <div class="gdlr-reservation-bar-summary-form" id="gdlr-reservation-bar-summary-form"></div>
+                                        <div class="gdlr-reservation-bar-room-form" id="gdlr-reservation-bar-room-form"></div>
+                                        <div class="gdlr-reservation-bar-date-form" id="gdlr-reservation-bar-date-form">
+                                            <div class="gdlr-reservation-field gdlr-resv-datepicker">
+                                                <span class="gdlr-reservation-field-title">Ngày đăng ký</span>
+                                                <div class="gdlr-datepicker-wrapper"><input type="text" id="gdlr-check-in" class="gdlr-datepicker" data-dfm="d M yy" value="2016-12-09" readonly="readonly" /><input type="hidden" class="gdlr-datepicker-alt" name="gdlr-check-in" value="2016-12-09" /></div>
+                                            </div>
+                                            <div class="gdlr-reservation-field gdlr-resv-combobox">
+                                                <span class="gdlr-reservation-field-title">Đêm</span>
+                                                <div class="gdlr-combobox-wrapper">
+                                                    <select name="gdlr-night" id="gdlr-night">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="gdlr-reservation-field gdlr-resv-datepicker">
+                                                <span class="gdlr-reservation-field-title">Ngày trả Phòng</span>
+                                                <div class="gdlr-datepicker-wrapper"><input type="text" id="gdlr-check-out" class="gdlr-datepicker" data-dfm="d M yy" value="2016-12-10" readonly="readonly" /><input type="hidden" class="gdlr-datepicker-alt" name="gdlr-check-out" value="2016-12-10" /></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="gdlr-reservation-field gdlr-resv-combobox">
+                                                <span class="gdlr-reservation-field-title">Phòng</span>
+                                                <div class="gdlr-combobox-wrapper">
+                                                    <select name="gdlr-room-number" id="gdlr-room-number">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="gdlr-reservation-people-amount-wrapper" id="gdlr-reservation-people-amount-wrapper">
+                                                <div class="gdlr-reservation-people-amount">
+                                                    <div class="gdlr-reservation-people-title">Phòng <span>1</span></div>
+                                                    <div class="gdlr-reservation-field gdlr-resv-combobox">
+                                                        <span class="gdlr-reservation-field-title">Người lớn</span>
+                                                        <div class="gdlr-combobox-wrapper">
+                                                            <select name="gdlr-adult-number[]">
+                                                                <option value="1">1</option>
+                                                                <option value="2" selected>2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gdlr-reservation-field gdlr-resv-combobox">
+                                                        <span class="gdlr-reservation-field-title">Trẻ em</span>
+                                                        <div class="gdlr-combobox-wrapper">
+                                                            <select name="gdlr-children-number[]">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <input type="hidden" name="hotel_data" value="1"><input type="submit" class="gdlr-reservation-bar-button gdlr-button with-border" value="Kiểm tra">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="gdlr-reservation-bar-service-form" id="gdlr-reservation-bar-service-form"></div>
+                                        <input type="hidden" name="single-room" value="3596" />
+                                    </form>*@
+                                    <!--End Dat phong-->
+                                    <!--Chi tiet-->
+                                    <div class="gdlr-room-main-content">
+                                        <div class="gdlr-room-thumbnail gdlr-single-room-thumbnail">
+                                            <div class="flexslider" data-pausetime="7000" data-slidespeed="600" data-effect="fade">
+                                                <ul class="slides">
+                                                    @foreach (var h1 in c.MOTA_PHONG.Skip(3).Take((c.MOTA_PHONG.Count() - 3) / 2))
+                                                    {
+                                                        <li><img src="~/Images/@h1.Ten_MoTa" alt="" width="600" height="330" /></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                            <ul class="gdlr-flex-thumbnail-control" id="gdlr-flex-thumbnail-control">
+                                                @foreach (var h2 in c.MOTA_PHONG.Skip((3 + (c.MOTA_PHONG.Count() - 3) / 2)).Take((c.MOTA_PHONG.Count() - 3) / 2))
+                                                {
+                                                    <li><img src="~/Images/@h2.Ten_MoTa" alt="" width="80" height="80" /></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="gdlr-room-title-wrapper">
+                                        <h3 class="gdlr-room-title">@c.TenLoaiPhong</h3>
+                                        <div class="gdlr-room-price"><span class="gdlr-head">Giá Từ</span><span class="gdlr-tail">@Html.FormatValue(c.DONGIA.Gia, "{0:000,000.00}") VND / Đêm</span></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="gdlr-hotel-room-info">
+                                        @foreach (var ct in c.CHITIET_PHONG.Take(8))
+                                        {
+                                            <div class="gdlr-room-info"><i class="fa fa-check-square-o icon-check"></i><span class="gdlr-head">@ct.Ten_CTP</span><span class="gdlr-tail">Có</span></div>
+                                        }
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="gdlr-room-content">
+                                        @foreach (var m1 in c.MOTA_PHONG.Take(1))
+                                        {
+                                            <p style="text-align: justify;">@Html.Raw(m1.NoiDung_MoTa)</p>
+                                        }
+                                        <ul>
+                                            @foreach (var m2 in c.MOTA_PHONG.Skip(1).Take(1))
+                                            {
+                                                <p>@Html.Raw(m2.NoiDung_MoTa)</p>
+                                            }
+                                        </ul>
+                                        <p style="text-align: justify;"><a href="/DatPhong/B2/@c.MaLP"><img class="size-medium wp-image-4475 aligncenter" src="https://gkcentralhotel.com/wp-content/uploads/2016/07/book-now-300x138.png" alt="book-now" width="300" height="138" srcset="https://gkcentralhotel.com/wp-content/uploads/2016/07/book-now-300x138.png 300w, https://gkcentralhotel.com/wp-content/uploads/2016/07/book-now-768x353.png 768w, https://gkcentralhotel.com/wp-content/uploads/2016/07/book-now.png 800w" sizes="(max-width: 300px) 100vw, 300px" style="opacity: 1;"></a></p>
+                                    </div>
+                                </div>
+                                <!-- #room -->
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!-- gdlr-content -->
+        <div class="clear"></div>
+    </div>
+}
+<!-- content wrapper -->

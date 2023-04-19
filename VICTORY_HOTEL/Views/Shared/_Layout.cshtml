@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - VICTORY HOTEL</title>
+
+    <link rel="icon" type="image/ico" href="@Url.Content("../Images/favicon.ico")"/>
+    <link rel="shortcut icon" type="image/ico" href="@Url.Content("../Images/favicon.ico")"/>
+    <!--Script-->
+    <script src="~/Scripts/js/sdk.js"></script>
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/vi.gkcentralhotel.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1" } };
+        !function (a, b, c) { function d(a) { var c, d, e, f, g, h = b.createElement("canvas"), i = h.getContext && h.getContext("2d"), j = String.fromCharCode; if (!i || !i.fillText) return !1; switch (i.textBaseline = "top", i.font = "600 32px Arial", a) { case "flag": return i.fillText(j(55356, 56806, 55356, 56826), 0, 0), !(h.toDataURL().length < 3e3) && (i.clearRect(0, 0, h.width, h.height), i.fillText(j(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), c = h.toDataURL(), i.clearRect(0, 0, h.width, h.height), i.fillText(j(55356, 57331, 55356, 57096), 0, 0), d = h.toDataURL(), c !== d); case "diversity": return i.fillText(j(55356, 57221), 0, 0), e = i.getImageData(16, 16, 1, 1).data, f = e[0] + "," + e[1] + "," + e[2] + "," + e[3], i.fillText(j(55356, 57221, 55356, 57343), 0, 0), e = i.getImageData(16, 16, 1, 1).data, g = e[0] + "," + e[1] + "," + e[2] + "," + e[3], f !== g; case "simple": return i.fillText(j(55357, 56835), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0]; case "unicode8": return i.fillText(j(55356, 57135), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0]; case "unicode9": return i.fillText(j(55358, 56631), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0] } return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i; for (i = Array("simple", "flag", "unicode8", "diversity", "unicode9"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <script src="~/Scripts/js/wp-emoji-release.min.js"></script>
+    @*<script src="~/Scripts/js/maps.js"></script>
+        <script>var ms_grabbing_curosr='https://vi.gkcentralhotel.com/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='https://vi.gkcentralhotel.com/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';</script>
+        <script src="~/Scripts/js/cdswidgets_m-c-v2102084671a.js"></script>
+        <script src="~/Scripts/js/common.js"></script>
+        <script src="~/Scripts/js/util.js"></script>
+        <script src="~/Scripts/js/stats.js"></script>*@
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/jquery-migrate.min.js"></script>
+
+    @*<script src="~/Scripts/js/ad_status.js"></script>*@
+    <script src="~/Scripts/js/www-embed-player.js"></script>
+
+    
+    <!--End Script-->
+    <!--CSS-->
+    <style type="text/css">
+        .gm-err-container {
+            height: 100%;
+            width: 100%;
+            display: table;
+            background-color: #e0e0e0;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        .gm-err-content {
+            border-radius: 1px;
+            padding-top: 0;
+            padding-left: 10%;
+            padding-right: 10%;
+            position: static;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+            .gm-err-content a {
+                color: #4285f4;
+            }
+
+        .gm-err-icon {
+            text-align: center;
+        }
+
+        .gm-err-title {
+            margin: 5px;
+            margin-bottom: 20px;
+            color: #616161;
+            font-family: Roboto,Arial,sans-serif;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .gm-err-message {
+            margin: 5px;
+            color: #757575;
+            font-family: Roboto,Arial,sans-serif;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .gm-err-autocomplete {
+            padding-left: 20px;
+            background-repeat: no-repeat;
+            background-size: 15px 15px;
+        }
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .fancybox-margin {
+            margin-right: 17px;
+        }
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001;
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .fb_invisible {
+            display: none;
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal;
+        }
+        .fb_reset > div {
+            overflow: hidden;
+        }
+        .fb_link img {
+            border: none;
+        }
+        .fb_animate {
+            animation: fb_transform .3s forwards;
+        }
+
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001;
+        }
+
+        .fb_reset .fb_dialog_legacy {
+            overflow: visible;
+        }
+
+        .fb_dialog_advanced {
+            padding: 10px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        .fb_dialog_content {
+            background: #fff;
+            color: #333;
+        }
+
+        .fb_dialog_close_icon {
+            background: url('../../Images/IE9JII6Z1Ys.png') no-repeat scroll 0 0 transparent;
+            /*background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;*/
+            /*_background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);*/
+            background-image: url('../../Images/s816eWC-2sl.gif');
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px;
+        }
+
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            top: 5px;
+            left: 5px;
+            right: auto;
+        }
+
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1;
+        }
+
+        .fb_dialog_close_icon:hover {
+            background: url('../../Images/IE9JII6Z1Ys.png') no-repeat scroll 0 -15px transparent;
+            _background-image: url('../../Images/s816eWC-2sl.gif');
+        }
+
+        .fb_dialog_close_icon:active {
+            background: url('../../Images/IE9JII6Z1Ys.png') no-repeat scroll 0 -30px transparent;
+            _background-image: url('../../Images/s816eWC-2sl.gif');
+        }
+
+        .fb_dialog_loader {
+            background-color: #f6f7f9;
+            border: 1px solid #606060;
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .fb_dialog_top_left, .fb_dialog_top_right, .fb_dialog_bottom_left, .fb_dialog_bottom_right {
+            height: 10px;
+            width: 10px;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .fb_dialog_top_left {
+            background: url('../../Images/8YeTNIlTZjm.png') no-repeat 0 0;
+            left: -10px;
+            top: -10px;
+        }
+
+        .fb_dialog_top_right {
+            background: url('../../Images/8YeTNIlTZjm.png') no-repeat 0 -10px;
+            right: -10px;
+            top: -10px;
+        }
+
+        .fb_dialog_bottom_left {
+            background: url('../../Images/8YeTNIlTZjm.png') no-repeat 0 -20px;
+            bottom: -10px;
+            left: -10px;
+        }
+
+        .fb_dialog_bottom_right {
+            background: url('../../Images/8YeTNIlTZjm.png') no-repeat 0 -30px;
+            right: -10px;
+            bottom: -10px;
+        }
+
+        .fb_dialog_vert_left, .fb_dialog_vert_right, .fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+            position: absolute;
+            background: #525252;
+            filter: alpha(opacity=70);
+            opacity: .7;
+        }
+
+        .fb_dialog_vert_left, .fb_dialog_vert_right {
+            width: 10px;
+            height: 100%;
+        }
+
+        .fb_dialog_vert_left {
+            margin-left: -10px;
+        }
+
+        .fb_dialog_vert_right {
+            right: 0;
+            margin-right: -10px;
+        }
+
+        .fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+            width: 100%;
+            height: 10px;
+        }
+
+        .fb_dialog_horiz_top {
+            margin-top: -10px;
+        }
+
+        .fb_dialog_horiz_bottom {
+            bottom: 0;
+            margin-bottom: -10px;
+        }
+
+        .fb_dialog_iframe {
+            line-height: 0;
+        }
+
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+            .fb_dialog_content .dialog_title > span {
+                background: url('../../Images/Cou7n-nqK52.gif') no-repeat 5px 50%;
+                float: left;
+                padding: 5px 0 7px 26px;
+            }
+
+        body.fb_hidden {
+            -webkit-transform: none;
+            height: 100%;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            left: 0;
+            width: 100%;
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url('../../Images/3rhSv5V8j3o.gif') white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001;
+        }
+
+            .fb_dialog.fb_dialog_mobile.loading.centered {
+                width: auto;
+                height: auto;
+                min-height: initial;
+                min-width: initial;
+                background: none;
+            }
+
+                .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+                    width: 100%;
+                }
+
+                .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+                    background: none;
+                }
+
+        .loading.centered #fb_dialog_loader_close {
+            color: #fff;
+            display: block;
+            padding-top: 20px;
+            clear: both;
+            font-size: 18px;
+        }
+
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .45);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            min-height: 100%;
+            z-index: 10000;
+        }
+
+            #fb-root #fb_dialog_ipad_overlay.hidden {
+                display: none;
+            }
+
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden;
+        }
+
+        .fb_dialog_content .dialog_header {
+            -webkit-box-shadow: white 0 1px 1px -1px inset;
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));
+            border-bottom: 1px solid;
+            border-color: #1d4088;
+            color: #fff;
+            font: 14px Helvetica, sans-serif;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+            .fb_dialog_content .dialog_header table {
+                -webkit-font-smoothing: subpixel-antialiased;
+                height: 43px;
+                width: 100%;
+            }
+
+            .fb_dialog_content .dialog_header td.header_left {
+                font-size: 12px;
+                padding-left: 5px;
+                vertical-align: middle;
+                width: 60px;
+            }
+
+            .fb_dialog_content .dialog_header td.header_right {
+                font-size: 12px;
+                padding-right: 5px;
+                vertical-align: middle;
+                width: 60px;
+            }
+
+        .fb_dialog_content .touchable_button {
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));
+            border: 1px solid #29487d;
+            -webkit-background-clip: padding-box;
+            -webkit-border-radius: 3px;
+            -webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;
+            display: inline-block;
+            margin-top: 3px;
+            max-width: 85px;
+            line-height: 18px;
+            padding: 4px 12px;
+            position: relative;
+        }
+
+        .fb_dialog_content .dialog_header .touchable_button input {
+            border: none;
+            background: none;
+            color: #fff;
+            font: 12px Helvetica, sans-serif;
+            font-weight: bold;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+        }
+
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .fb_dialog_content .dialog_content {
+            background: url('../../Images/jKEcVPZFk-2.gif') no-repeat 50% 50%;
+            border: 1px solid #555;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px;
+        }
+
+        .fb_dialog_content .dialog_footer {
+            background: #f6f7f9;
+            border: 1px solid #555;
+            border-top-color: #ccc;
+            height: 40px;
+        }
+
+        #fb_dialog_loader_close {
+            float: left;
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden;
+        }
+
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url('../../Images/t-wz8gw1xG1.png');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 24px;
+            width: 24px;
+        }
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative;
+        }
+
+            .fb_iframe_widget span {
+                display: inline-block;
+                position: relative;
+                text-align: justify;
+            }
+
+            .fb_iframe_widget iframe {
+                position: absolute;
+            }
+
+        .fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%;
+        }
+
+            .fb_iframe_widget_fluid_desktop iframe {
+                min-width: 220px;
+                position: relative;
+            }
+
+        .fb_iframe_widget_lift {
+            z-index: 1;
+        }
+
+        .fb_hide_iframes iframe {
+            position: relative;
+            left: -10000px;
+        }
+
+        .fb_iframe_widget_loader {
+            position: relative;
+            display: inline-block;
+        }
+
+        .fb_iframe_widget_fluid {
+            display: inline;
+        }
+
+            .fb_iframe_widget_fluid span {
+                width: 100%;
+            }
+
+        .fb_iframe_widget_loader iframe {
+            min-height: 32px;
+            z-index: 2;
+            zoom: 1;
+        }
+
+        .fb_iframe_widget_loader .FB_Loader {
+            background: url('../../Images/jKEcVPZFk-2.gif') no-repeat;
+            height: 32px;
+            width: 32px;
+            margin-left: -16px;
+            position: absolute;
+            left: 50%;
+            z-index: 4;
+        }
+        @@keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @@keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+    <link href="~/Content/CSS/styles.css" rel="stylesheet" />
+    <link href="~/Content/CSS/gdlr-hotel.css" rel="stylesheet" />
+    <link href="~/Content/CSS/style.css" rel="stylesheet" />
+    <link href="~/Content/CSS/style(1).css" rel="stylesheet" />
+    <link href="~/Content/CSS/superfish.css" rel="stylesheet" />
+    <link href="~/Content/CSS/component.css" rel="stylesheet" />
+    <link href="~/Content/CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/jquery.fancybox.css" rel="stylesheet" />
+    <link href="~/Content/CSS/flexslider.css" rel="stylesheet" />
+    <link href="~/Content/CSS/style-responsive.css" rel="stylesheet" />
+    <link href="~/Content/CSS/style-custom.css" rel="stylesheet" />
+    <link href="~/Content/CSS/frontend.css" rel="stylesheet" />
+    <link href="~/Content/CSS/masterslider.main.css" rel="stylesheet" />
+    <link href="~/Content/CSS/custom.css" rel="stylesheet" />
+    <!--CSS2-->
+    @*<link href="~/Content/CSS/hrez_60927.css" rel="stylesheet" />
+        <link href="~/Content/CSS/hrez_base.css" rel="stylesheet" />
+        <link href="~/Content/CSS/hrez_layout.css" rel="stylesheet" />
+        <link href="~/Content/CSS/jquery.reject.css" rel="stylesheet" />
+        <link href="~/Content/CSS/jqueryui.css" rel="stylesheet" />
+        <link href="~/Content/CSS/print.css" rel="stylesheet" />*@
+    <!--End CSS-->
+    <link href="~/Content/CSS/sweet-alert.css" rel="stylesheet" />
+</head>
+<body class="home page page-id-3720 page-template-default single  _masterslider _msp_version_2.29.0  header-style-2">
+    <div class="body-wrapper  gdlr-icon-dark gdlr-header-solid">
+        <!--Header-->
+        @Html.Partial("Header")
+        <!--End Header-->
+
+        @RenderBody()
+          
+        <!--Footer-->
+        @Html.Partial("Footer")
+        <!--End Footer-->
+    </div>
+    <div class="op6">
+
+        <style>
+            .op8, .op7, .op6, .op5, .op4, .op3, .op2, .op1 {
+                position: absolute !important;
+            }
+        </style>
+        <style>
+            .op8 a, .op7 a, .op6 a, .op5 a, .op4 a, .op3 a, .op2 a, .op1 a {
+                float: left;
+                margin: 5px;
+            }
+        </style>
+        <script src="~/Scripts/js/jquery.form.min.js"></script>
+        <script type="text/javascript">
+            var _wpcf7 = { "loaderUrl": "https:\/\/vi.gkcentralhotel.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptcha": { "messages": { "empty": "Please verify that you are not a robot." } }, "sending": "Sending ..." };
+        </script>
+        <script src="~/Scripts/js/scripts.js"></script>
+        <script src="~/Scripts/js/core.min.js"></script>
+        <script src="~/Scripts/js/datepicker.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function (jQuery) { jQuery.datepicker.setDefaults({ "closeText": "Close", "currentText": "Today", "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "nextText": "Next", "prevText": "Previous", "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "dateFormat": "MM d, yy", "firstDay": 1, "isRTL": false }); });
+        </script>
+        <script type="text/javascript">
+            var objectL10n = { "closeText": "Done", "currentText": "Today", "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "monthStatus": "Show a different month", "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "firstDay": "1" };
+        </script>
+        <script src="~/Scripts/js/gdlr-hotel.js"></script>
+        <script src="~/Scripts/js/superfish.js"></script>
+        <script src="~/Scripts/js/hoverIntent.min.js"></script>
+        <script src="~/Scripts/js/modernizr.custom.js"></script>
+        <script src="~/Scripts/js/jquery.dlmenu.js"></script>
+        <script src="~/Scripts/js/jquery.easing.js"></script>
+        <script src="~/Scripts/js/jquery.transit.min.js"></script>
+        <script src="~/Scripts/js/jquery.fancybox.pack.js"></script>
+        <script src="~/Scripts/js/jquery.fancybox-media.js"></script>
+        <script src="~/Scripts/js/jquery.fancybox-thumbs.js"></script>
+        <script src="~/Scripts/js/jquery.flexslider.js"></script>
+        <script src="~/Scripts/js/jquery.isotope.min.js"></script>
+        <script src="~/Scripts/js/gdlr-script.js"></script>
+        <script src="~/Scripts/js/wp-embed.min.js"></script>
+        <script src="~/Scripts/js/masterslider.min.js"></script>
+        <script src="~/Scripts/js/responsive.min.js"></script>
+        <!--Alert-->
+        <script src="~/Scripts/js/sweet-alert.js"></script>
+        @*<script src="~/Scripts/js/jquery.min.js"></script>*@
+        <script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+        <!--End Alert-->
+        
+    </div>
+</body>
+@*<body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>*@
+</html>

@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "B4";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="gdlr-page-title-wrapper" style="background-image: url('/Images/gk_central_hotel_01.jpg'); ">
+    <div class="gdlr-page-title-overlay"></div>
+    <div class="gdlr-page-title-container container">
+        <h1 class="gdlr-page-title">Đặt Phòng</h1>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="gdlr-content">
+        <div class="with-sidebar-wrapper">
+            <div class="with-sidebar-container container gdlr-class-no-sidebar">
+                <div class="with-sidebar-left twelve columns">
+                    <div class="with-sidebar-content twelve columns">
+                        <div class="gdlr-item gdlr-item-start-content" id="gdlr-single-booking-content">
+
+                            <div class="gdlr-booking-content">
+                                <div class="gdlr-booking-process-bar" id="gdlr-booking-process-bar" data-state="3">
+                                    <div data-process="1" class="gdlr-booking-process">1. Chọn Ngày</div>
+                                    <div data-process="2" class="gdlr-booking-process">2. Chọn Phòng</div>
+                                    <div data-process="3" class="gdlr-booking-process">3. Thực hiện đặt phòng</div>
+                                    <div data-process="4" class="gdlr-booking-process gdlr-active">4. Xác nhận</div>
+                                </div>
+                                <div class="gdlr-booking-content-wrapper">
+                                    <div class="gdlr-booking-content-inner" id="gdlr-booking-content-inner" style="opacity: 1; height: auto;">
+                                        <div class="gdlr-booking-contact-container">
+                                            <p class="gdlr-form-half-left">
+                                                <h2>Cảm ơn bạn đã đặt phòng ở Victory Hotel</h2></br>                                                
+                                                <span>Đăng ký của bạn đã hệ thống ghi nhận. Vui lòng chuyển khoản trước 24h cuối ngày vào số tài khoản bên dưới để hoàn tất việc đăng ký.</span>
+                                            </p>
+                                            <div class="clear"></div>
+                                            <p class="gdlr-form-half-left">
+                                                <span>Số tài khoản Ngân hàng OCB:</span>
+                                                <span>007 100 0856969</span></br>  
+                                                <span>Số tài khoản Ngân hàng Vietcombank:</span>
+                                                <span>007 100 1234567</span></br>
+                                                <span>Số tài khoản Ngân hàng Techcombank:</span>
+                                                <span>102 12345678 001</span></br>
+                                                <span>Số tiền cần chuyển khoản: @string.Format("{0:n}",int.Parse(ViewBag.TongTien)) VND</span>
+                                            </p>                                            
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sidebar With Content Section-->
+                                <div class="with-sidebar-wrapper">
+                                    <section id="content-section-1">
+                                        <div class="section-container container">
+                                            <div class="room-item-wrapper type-classic">
+                                                <div class="room-item-holder ">
+                                                    <div class="gdlr-room-carousel-item gdlr-item">
+                                                        <div class="flexslider" data-type="carousel" data-nav-container="room-item-wrapper" data-columns="8">
+                                                            <ul class="slides">
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ebanking.ocb.com.vn/corp/home.ocb"><img src="~/Images/Logo_NganHang/OCBbank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://www.vietcombank.com.vn/IBanking/"><img src="~/Images/Logo_NganHang/vietcombank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ebanking.vietinbank.vn/rcas/portal/web/retail/bflogin"><img src="~/Images/Logo_NganHang/vietinbank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ebanking.dongabank.com.vn/"><img src="~/Images/Logo_NganHang/dongabank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ebanking.abbank.vn/scripts/t24tib"><img src="~/Images/Logo_NganHang/abbank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="http://acb.com.vn/vn/personal/giao-dich-cung-acb/acb-online/ACB-iBanking"><img src="~/Images/Logo_NganHang/Acb_logo.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ibank.agribank.com.vn/ibank/index.jsp"><img src="~/Images/Logo_NganHang/agribank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ebanking.baca-bank.vn/IBSRetail/Request?&dse_sessionId=3nil-kZnhR2kWrRXmK09wNX&dse_applicationId=-1&dse_pageId=2&dse_operationName=retailIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"><img src="~/Images/Logo_NganHang/bacabank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://www.bidv.vn:81/EntlWeb/IbsJsps/orbilogin.jsp?Source=NewLogin"><img src="~/Images/Logo_NganHang/bidvbank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                                <li class="dd-gdlr-item1">
+                                                                    <div class="gdlr-room-thumbnail"><a target="_blank" href="https://ebanking.eximbank.vn/ib/faces/login.jspx?_afrLoop=1557533545000&_adf.ctrl-state=1b9iz94ruo_4"><img src="~/Images/Logo_NganHang/eximbank.jpg" class="dd-width-logo"/></a></div>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!-- Below Sidebar Section-->
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+

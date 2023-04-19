@@ -1,0 +1,62 @@
+﻿@model VICTORY_HOTEL.Models.LOAIPHONG
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="gdlr-header-substitute"></div>
+<div class="gdlr-page-title-wrapper" style="background-image: url('../Images/gk_central_hotel_10.jpg'); ">
+    <div class="gdlr-page-title-overlay"></div>
+    <div class="gdlr-page-title-container container">
+        <h1 class="gdlr-page-title">LOẠI PHÒNG</h1>
+    </div>
+</div>
+<!-- is search -->
+<div class="content-wrapper">
+    <div class="gdlr-content">
+        <!-- Above Sidebar Section-->
+        <!-- Sidebar With Content Section-->
+        <div class="with-sidebar-wrapper">
+            <section id="content-section-1">
+                <div class="section-container container">
+                    <div class="room-item-wrapper type-classic">
+                        <div class="room-item-holder ">
+                            <div class="gdlr-room-carousel-item gdlr-item">
+                                <div class="flexslider" data-type="carousel" data-nav-container="room-item-wrapper" data-columns="3">
+                                    <ul class="slides">
+                                        @foreach (VICTORY_HOTEL.Models.LOAIPHONG c in ViewBag.LoaiPhong)
+                                        {
+                                            <li class="gdlr-item gdlr-classic-room">
+                                                @foreach (var h1 in c.MOTA_PHONG.Skip(3).Take(1))
+                                                {
+                                                    <div class="gdlr-room-thumbnail"><a href="/LoaiPhong/ChiTiet/@c.MaLP"><img src="~/Images/@h1.NoiDung_MoTa" alt="" width="300" height="200" /></a></div>
+                                                }
+                                                <h3 class="gdlr-room-title"><a href="/LoaiPhong/ChiTiet/@c.MaLP">@c.TenLoaiPhong</a></h3>
+                                                <div class="gdlr-hotel-room-info">
+                                                    @foreach (var ct in c.CHITIET_PHONG.Take(4))
+                                                    {
+                                                        <div class="gdlr-room-info" style="width:88%;"><i class="fa fa-check-square-o icon-check"></i><span class="gdlr-head">@ct.Ten_CTP</span><span class="gdlr-tail">Có</span></div>
+                                                    }
+                                                    <div class="gdlr-room-price"><span class="gdlr-head">Giá từ</span><span class="gdlr-tail">@Html.FormatValue(c.DONGIA.Gia, "{0:000,000.00}") VND / Đêm</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <a class="gdlr-button with-border" href="/LoaiPhong/ChiTiet/@c.MaLP">Xem Chi Tiết<i class="fa fa-long-arrow-right icon-long-arrow-right"></i></a>
+                                            </li>
+                                        }
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+        </div>
+        <!-- Below Sidebar Section-->
+    </div>
+    <!-- gdlr-content -->
+    <div class="clear"></div>
+</div>
+<!-- content wrapper -->

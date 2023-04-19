@@ -1,0 +1,79 @@
+﻿@model VICTORY_HOTEL.Models.LOAIPHONG
+@{
+    ViewBag.Title = "Buoc_1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="gdlr-page-title-wrapper" style="background-image: url('/Images/gk_central_hotel_01.jpg'); ">
+    <div class="gdlr-page-title-overlay"></div>
+    <div class="gdlr-page-title-container container">
+        <h1 class="gdlr-page-title">Đặt Phòng</h1>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="gdlr-content">
+        <div class="with-sidebar-wrapper">
+            <div class="with-sidebar-container container gdlr-class-no-sidebar">
+                <div class="with-sidebar-left twelve columns">
+                    <div class="with-sidebar-content twelve columns">
+                        <div class="gdlr-item gdlr-item-start-content" id="gdlr-single-booking-content">
+                            
+                            <div class="gdlr-booking-content">
+                                <div class="gdlr-booking-process-bar" id="gdlr-booking-process-bar" data-state="2">
+                                    <div data-process="1" class="gdlr-booking-process gdlr-active">1. Chọn loại phòng</div>
+                                    <div data-process="2" class="gdlr-booking-process ">2. Chọn ngày</div>
+                                    <div data-process="3" class="gdlr-booking-process ">3. Thực hiện đặt phòng</div>
+                                    <div data-process="4" class="gdlr-booking-process ">4. Xác nhận</div>
+                                </div>
+                                <div class="gdlr-booking-content-wrapper">
+                                    <div class="gdlr-booking-content-inner" id="gdlr-booking-content-inner">
+                                        <div class="gdlr-booking-room-wrapper">
+                                            @foreach (VICTORY_HOTEL.Models.LOAIPHONG c in ViewBag.LoaiPhong)
+                                            {
+                                                <div class="gdlr-item gdlr-room-item gdlr-medium-room">
+                                                    <div class="gdlr-ux gdlr-medium-room-ux">
+                                                        @foreach (var h1 in c.MOTA_PHONG.Skip(3).Take(1))
+                                                        {
+                                                            <div class="gdlr-room-thumbnail"><a href="/LoaiPhong/ChiTiet/@c.MaLP"><img src="~/Images/@h1.NoiDung_MoTa" alt="" width="400" height="300" style="transform: scale(1, 1);"></a></div>
+                                                        }
+                                                        <div class="gdlr-room-content-wrapper">
+                                                            <h3 class="gdlr-room-title"><a href="/LoaiPhong/ChiTiet/@c.MaLP">@c.TenLoaiPhong</a></h3>
+                                                            <div class="gdlr-hotel-room-info">
+                                                                @foreach (var ct in c.CHITIET_PHONG.Take(4))
+                                                                {
+                                                                    <div class="gdlr-room-info"><i class="fa fa-check-square-o icon-check"></i><span class="gdlr-head">@ct.Ten_CTP</span><span class="gdlr-tail">Có</span></div>
+                                                                }
+                                                                <div class="clear"></div>
+                                                            </div>
+                                                            @foreach (var m1 in c.MOTA_PHONG.Take(1))
+                                                            {
+                                                                <div class="gdlr-room-content">@Html.Raw(m1.NoiDung_MoTa)</div>
+                                                            }
+                                                            <a class="gdlr-room-selection gdlr-button with-border" href="/DatPhong/B2/@c.MaLP" data-roomid="@c.MaLP">Chọn phòng</a>
+                                                            <div class="gdlr-room-price">
+                                                                <span class="gdlr-head">Giá từ</span><span class="gdlr-tail">@Html.FormatValue(c.DONGIA.Gia, "{0:000,000.00}") VND / Đêm</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- gdlr-content -->
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+}
+
+<div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                @using (Html.BeginForm())
+                {  
+                <h1>Login Form</h1>
+                        <div>
+                            @Html.TextBox("UserName", "", new { @class = "form-control", @placeholder = "Username", @required = ""})
+                        </div>
+                        <div>
+                            @Html.Password("Password", "", new { @class = "form-control", @placeholder = "Password", @required = "" })
+                        </div>
+                        <div>
+                            @Html.ValidationSummary(true, "", new { @class = "dd-text-danger" })
+                            <input type="submit" class="btn btn-default submit" value="Log in" style="float:none; margin-left:0;"/>
+                        </div>
+                        <div class="clearfix"></div>
+                }
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+

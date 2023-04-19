@@ -1,0 +1,392 @@
+/* General */
+
+@font-face {
+    font-family: 'myriadpro';
+    src: url('/HOTEL/60927/SHELL/myriadpro-boldcond-webfont.eot') format('embedded-opentype'),
+    url('/HOTEL/60927/SHELL/myriadpro-boldcond-webfont.woff') format('woff'),
+    url('/HOTEL/60927/SHELL/myriadpro-boldcond-webfont.ttf') format('truetype');}
+
+html { font-size: 14px; background: #fff;}
+
+body { background: transparent; font-family: Arial,Tahoma; font-weight: normal; color:#000000 font-size: 13px;}
+
+.row { width: 100%; max-width: 1000px; padding: 0 35px;}
+
+a { text-decoration: underline; font-family: Arial,Tahoma;  color: #371d0f;}
+
+a:hover { color: #d2ab67; text-decoration: underline; }
+
+a.inherit { color: #d2ab67; }
+
+/* end General */
+
+.logo {top: 0px;}
+
+
+/* Text & Headers */
+
+.hSize1 {color: #d2ab67; font-family: 'myriadpro'; font-weight: normal;}
+
+.hSize2 { color:#d2ab67; font-family: 'myriadpro'; font-weight: normal; text-transform: uppercase;}
+
+.hSize3, .hSize4 { font-family: 'myriadpro'; font-weight: normal; color: #3d3d3d;}
+
+.tLight { color:#1c1c1c }
+
+.hCollpase .ToggleArrowDiv_Off + span::before { color: #d2ab67; }
+
+.hCollpase .ToggleArrowDiv_On + span::before { color: #d2ab67; }
+
+.Bg4 .hCollpase .ToggleArrowDiv_Off + span::before, .Bg4 .hCollpase .ToggleArrowDiv_On + span::before, .Bg4 .shCollpase .ToggleArrowDiv_Off + span::before, .Bg4 .shCollpase .ToggleArrowDiv_On + span::before { color: #FFF; }
+
+.StrikeOut { color: #d92400; }
+
+.fieldDiv label {font-family: 'myriadpro';  font-weight: normal; font-size: 14px; color: #d2ab67;}
+
+/* end Text & Headers */
+
+/* Hotel footer */
+footer.footer {
+    background: url('http://www.gkcentralhotel.com/Data/Sites/1/skins/default/images/footer-bg.png') no-repeat bottom center;
+    padding: 15px 0 0;
+    height: 59px;
+    clear: both;
+}
+.container, .middle-fullwidth {
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap-ft.Module.Module-77 {
+    max-width: 960px;
+    overflow: hidden;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.left-ft {
+    float: left;
+    width: 30%;
+    margin-top: 3px;
+}
+.right-ft {
+    float: right;
+    width: 70%;
+}
+.left-ft h2 {
+    color: #917544;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 15px 0 0;
+    float: left;
+    line-height: 23px;
+}
+.left-ft ul, .right-ft ul {
+    margin: 0;
+    padding: 0;
+}
+.left-ft ul li {
+    list-style: none;
+    float: left;
+    margin: 0 5px 0 0;
+}
+.right-ft ul li {
+    list-style: none;
+    float: right;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.right-ft ul li img {
+    filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter … 0 .12 .39 .04 0 0 .08 .28 .03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey');
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
+}
+.right-ft ul li img:hover{filter:none;-webkit-filter:sepia(0);-moz-filter:sepia(0);-ms-filter:sepia(0);-o-filter:sepia(0);filter:sepia(0)}
+/* Hotel footer */
+
+
+/* Icons */
+
+.openModal::before, .FilterLinkInActive::before, .FilterLinkActive::before, .CloseBtnX::before, .modifyIco::before, .removeIco::before, .MonthlyAvailabilityLink::after, .ArrowTop::before, .DateBack .activeLink::before, .ShopCartIco::before, .calendarIco::before, .printIco::before { color:#000000 }
+
+.infoIco::before, .infoIcoAfter::after, .Asterisk::before, .DateFwd .activeLink::before, .removeIco::after { color: #917544; }
+
+.ProductNamePromo .PromoIcon::before { color:#917544; }
+.ProductDesc > span{ color: #917544; }
+.PromoMsg.tBold { color: #917544; }
+
+.FilterClose::after, .CompareClose::after { color:#917544 }
+
+/* end Icons */
+
+
+/* Backgrounds & Borders */
+
+.Bg1 { background: #fff; }
+
+.Bg2 { background: #f9f9f9; }
+
+.Bg3 { background: #f5f5f5; }
+
+.ProductsInCategory:before, .PackageList:before { color: #f5f5f5; }
+
+.Bg4 { background: #424242; color: #FFF; }
+
+.Bg5 { background: #d2ab67; color: #fff; border: 1px solid #d2ab67; font-family: Arial,Tahoma;}
+
+.Bg6, .ui-widget-content { background: #ffffff; }
+
+.Bg7 { background: #ededed; background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%); background: -webkit-linear-gradient(top, #ffffff 0%,#ededed 100%); background: linear-gradient(to bottom, #ffffff 0%,#ededed 100%); }
+
+.Br1 { border-color: #ddd; }
+
+.Br2 { border-color: #ddd;font-family: Arial,Tahoma;}
+
+.AdditionalDetailsHeader h3.hCollpase { border-top: 1px solid #ededed; }
+
+.Br3 { border-color: transparent; }
+
+/* end Backgrounds & Borders */
+
+
+
+/* Form Fields */
+
+input[type=text], input[type=number], input[type=email], input[type=password], input[type=tel], textarea, select { color:#000000 background: #FFF; border: 1px solid #ccc; font-family: Arial,Tahoma; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+
+.calendars-wrapper, .selectWrap { background: #FFF; }
+
+.selectWrap::before { color: #d2ab67; }
+
+.checkboxGroup input[type=checkbox] + label::before, .radiobuttonGroup input[type="radio"] + label::before,
+.checkboxGroup td.unchecked + td label::before, .checkboxGroup td.checked + td label::before,
+.checkboxGroup .unchecked + label::before, .checkboxGroup .checked + label::before { color: #d2ab67; }
+
+/* end Form Fields */
+
+
+/* Buttons */
+
+.btnSt1, .btnSt2, .btnSt3, .btnSt4 { font-family: 'myriadpro'; color: #d2ab67; border: 0; text-transform: uppercase; font-weight:normal; font-size:18px;}
+
+.btnSt1 {  background: #d1aa66; background-image: -webkit-linear-gradient(top, #d1aa66, #7c602f); background-image: -moz-linear-gradient(top, #d1aa66, #7c602f); background-image: -ms-linear-gradient(top, #d1aa66, #7c602f); background-image: -o-linear-gradient(top, #d2ab67, #7c602f); background-image: linear-gradient(to bottom, #d1aa66, #7c602f); color: #371d0f; color: #371d0f; border-radius: 9px; box-shadow: 2px 1px 2px #000;}
+
+.btnSt1:hover { background: #d1aa66; background-image: -webkit-linear-gradient(top, #7c602f, #d1aa66); background-image: -moz-linear-gradient(top, #7c602f, #d1aa66); background-image: -ms-linear-gradient(top, #7c602f, #d1aa66); background-image: -o-linear-gradient(top, #7c602f, #d1aa66); background-image: linear-gradient(to bottom, #7c602f, #d1aa66); color: #371d0f;}
+
+.btnSt2 { background: #371d0f; color: #d2ab67; border-radius: 5px;}
+
+.btnSt2:hover {background: #371d0f; color: #fff;}
+
+.btnSt3, .ReviewBtn, .ModifyResBtn { background: #d1aa66; background-image: -webkit-linear-gradient(top, #d1aa66, #7c602f); background-image: -moz-linear-gradient(top, #d1aa66, #7c602f); background-image: -ms-linear-gradient(top, #d1aa66, #7c602f); background-image: -o-linear-gradient(top, #d2ab67, #7c602f); background-image: linear-gradient(to bottom, #d1aa66, #7c602f); color: #371d0f; color: #371d0f; border-radius: 9px; box-shadow: 2px 1px 2px #000; box-shadow: 2px 1px 2px #000;}
+
+.btnSt3:hover, .ReviewBtn:hover, .ModifyResBtn:hover {background: #d1aa66; background-image: -webkit-linear-gradient(top, #7c602f, #d1aa66); background-image: -moz-linear-gradient(top, #7c602f, #d1aa66); background-image: -ms-linear-gradient(top, #7c602f, #d1aa66); background-image: -o-linear-gradient(top, #7c602f, #d1aa66); background-image: linear-gradient(to bottom, #7c602f, #d1aa66); color: #371d0f;}
+
+.btnSt4 {background: #371d0f; color: #d2ab67; border-radius: 5px;}
+
+.btnSt4:hover {background: #371d0f; color: #fff;}
+
+a.btnSt1:hover, a.btnSt2:hover, .checkboxGroup .btnSt2 label::before { color: #d2ab67 !important; }
+
+a.btnSt3:hover, a.btnSt4:hover, .backBtn::before { color: #fff !important; }
+
+.PkgBtmNoThxBtn, .PkgTopNoThxBtn { color: #d2ab67; background: none; text-decoration: underline; box-shadow: none !important;}
+
+.PkgBtmNoThxBtn:hover, .PkgTopNoThxBtn:hover { color: #4c280d; background: none; }
+
+/* end Buttons */
+
+
+/* jQuery UI */
+
+/* Border for the datepicker and popups and price slider bar */
+.ui-widget-content { border: 1px solid #d2ab67; }
+
+/* Icons in popup contents. Not in use atm, use same color as popups text */
+.ui-icon, .ui-widget-content .ui-icon { background-image: url("/chain/19159/images/shell/ui-icons_222222_256x240.png"); }
+
+/* Header styles. Used in datepicker, availability calendar and popups and price slider bar */
+.ui-widget-header { background: #371d0f; color:#d2ab67;}
+.ui-widget-header .ui-icon { background-image: url("/chain/19159/images/shell/ui-icons_222222_256x240.png");background: #3d3d3d; }
+
+/* Button styles default status. Datepicker and Popup close, dialog buttons; price slider handlers. Use same colors as BE btnSt3 and btnSt4 buttons */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #DDD; background: #d2ab67; color:#000000 }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color:#000000 }
+.ui-state-default .ui-icon { background-image: url("/chain/19159/images/shell/ui-icons_222222_256x240.png"); }
+
+/* Button Styles hover */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #DDD; background: #fff; color:#000000 }
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited { color:#000000 }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon { background-image: url("/chain/19159/images/shell/ui-icons_222222_256x240.png"); }
+
+/* Button Styles active */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #DDD; background: #fff; color:#000000 }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color:#000000 }
+.ui-state-active .ui-icon { background-image: url("/chain/19159/images/shell/ui-icons_222222_256x240.png"); }
+
+/* end jQuery UI */
+
+
+/* Datepicker dates and selected date */
+
+.calendars-popup td a.ui-state-default, .calendars-popup td a.ui-state-hover { border: 1px solid #ddd; color: #3b3b3b; }
+
+.calendars-popup td a.ui-state-active, .calendars-popup td a.ui-state-active:hover { border: 1px solid #3b3b3b; background: #3b3b3b; color: #FFF; }
+
+.CalendarDiv .ui-state-active, .CalendarDiv a.ui-state-active { border: 3px solid #3b3b3b; }
+
+.CalendarDiv .BENoAvail, .CalendarDiv a.BENoAvail { background-color: #f40b21; background-image: url(/hotel/HOTELID/images/shell/noavail.png); color: #3b3b3b; border: 0; }
+
+.ui-dialog-buttons, .calendars-popup {min-width: 300px;}
+
+
+/* end Datepicker dates and selected date */
+
+
+/* Calendar Color Codes
+
+.CalendarDiv .BECalOpen, .CalendarDiv a.BECalOpen, .CalendarDiv .ui-state-default { background: #288c4f; color: #FFF; border: 0; }
+
+.CalendarDiv .BENoAvail, .CalendarDiv a.BENoAvail { background-color: #f40b21; background-image: url(/hotel/HOTELID/images/shell/noavail.png); color: #3b3b3b; border: 0; }
+
+.CalendarDiv .BEMinLen, .CalendarDiv a.BEMinLen { background: #81d9a3; color: #FFF; border: 0; }
+
+.CalendarDiv .BENoArrive, .CalendarDiv a.BENoArrive { background: #55b37a; color: #FFF; border: 0; }
+
+end Calendar Color Codes */
+
+@media screen and (max-width: 890px) {
+
+    footer.footer {
+        background: url('http://www.gkcentralhotel.com/Data/Sites/1/skins/default/images/footer-bg.png') repeat-y;
+        padding: 15px 0;
+        height: auto;
+        clear: both;
+    }
+    .left-ft {
+        float: none;
+        width: 100%;
+        margin-top: 3px;
+        overflow: hidden;
+    }
+    .right-ft {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .PckOptBtnsBtm, .CriteriaBtnDiv { background: #FFF; }
+    footer.footer {
+        margin-bottom: 60px;
+    }
+    .right-ft ul li {
+        float: none;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .right-ft ul li:last-child {
+        display: none;
+    }
+}
+
+/* end Mobile */
+
+
+/* Shell */
+
+.fixed { position: static; }
+
+.to-toplink { background-color: #555; color: #fff; }
+.to-toplink:hover, .to-toplink:focus { color: #fff; }
+.to-toplink.active:hover, .to-toplink.active:focus { background-color: rgba(0,0,0,0.6); color: #fff; }
+
+.header-strip { background: #d2ab67; color: #FFF; padding-top: 10px;}
+
+.large-2 { width: 354px; float: left; margin: 0 auto; }
+
+.menu-trigger { color: #d2ab67; top: 55px; right: 40px; }
+.fa {color: #d2ab67;}
+
+nav.primary { float: none; position: static; text-align: center; }
+
+nav.primary > div { margin: 0 auto; display: inline-block; }
+
+#primary-nav li { border-bottom: 1px solid #9ba9a9; background: transparent;padding: 9px 12px; }
+
+#primary-nav li > a { color: #d2ab67; background: transparent; box-shadow: none; text-shadow: 1px 1px 0 #000; font-weight: normal; font-family:'myriadpro'; font-size: 18px; padding: 9px 12px; border-radius: 9px;}
+#primary-nav li:hover > a { color: #fff; text-transform: uppercase;   background: #d1aa66; background-image: -webkit-linear-gradient(top, #d1aa66, #7c602f); background-image: -moz-linear-gradient(top, #d1aa66, #7c602f); background-image: -ms-linear-gradient(top, #d1aa66, #7c602f); background-image: -o-linear-gradient(top, #d2ab67, #7c602f); background-image: linear-gradient(to bottom, #d1aa66, #7c602f); color: #371d0f;  box-shadow: 2px 1px 2px #000; }
+
+.content { padding: 0 20px; margin: 40px auto; }
+
+#XbeViewPanel {background: #fff; padding-top: 20px; }
+
+.header-main { background: url('/HOTEL/60927/IMAGES/SHELL/header.png') no-repeat top center; border-bottom: none; box-shadow: 0px 10px 12px #888; background-size: cover;}
+
+.footer-menu { border-top: transparent; padding: 20px 10px; margin-right: 0; margin-left: 0; background: #1e1109; }
+
+.footer-menu .footer-nav ul li a { color: #917544; font-size: 14px;}
+
+
+@media only screen and (min-width: 64.063em) {
+    #primary-nav li { border: 0; }
+    #primary-nav li:hover > a {color: #d2ab67; background: transparent;}
+
+}
+
+@media only screen and (max-width: 64.063em) {
+    #primary-nav li { float: left; border: 0; }
+    #primary-nav li:hover > a {color: #fff; text-transform: uppercase;   background: #d1aa66; background-image: -webkit-linear-gradient(top, #d1aa66, #7c602f); background-image: -moz-linear-gradient(top, #d1aa66, #7c602f); background-image: -ms-linear-gradient(top, #d1aa66, #7c602f); background-image: -o-linear-gradient(top, #d2ab67, #7c602f); background-image: linear-gradient(to bottom, #d1aa66, #7c602f); color: #371d0f;  box-shadow: 2px 1px 2px #000;}
+    #primary-nav li > a { padding: 9px 12px; }
+    .header-main{ height: auto!important;}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .large-2 { max-width: 50%; float: none; text-align: center;}
+    .menu-trigger { top: 10px; }
+    .StepName .backBtn { top: 45px; left: 15px; }
+    .content { margin: 20px auto; }
+    nav.primary > div { display: block; }
+    #primary-nav li { float: none; border-bottom: none; display: block; }
+    #primary-nav li > a { padding: 10px; }
+    .to-toplink.active { bottom: 120px; }
+    .header-main{ height: auto!important;}
+    .btnSt1 { line-height: 22px; padding: 10px;}
+    #primary-nav li:hover > a { color: #fff; text-transform: uppercase;   background: #d1aa66; background-image: -webkit-linear-gradient(top, #d1aa66, #7c602f); background-image: -moz-linear-gradient(top, #d1aa66, #7c602f); background-image: -ms-linear-gradient(top, #d1aa66, #7c602f); background-image: -o-linear-gradient(top, #d2ab67, #7c602f); background-image: linear-gradient(to bottom, #d1aa66, #7c602f); color: #371d0f;  box-shadow: 2px 1px 2px #000; }
+    #primary-nav {background: transparent;}
+}
+
+@media only screen and (max-width: 420px) {
+    .StepName .backBtn { background: none; height: 30px; padding: 0; text-indent: -9999em; width: 30px; }
+    .StepName .backBtn::before { font-size: 30px; left: 0; text-indent: 0; top: 0; position:absolute; }
+    .header-main{ height: auto!important;}
+    .btnSt1 { line-height: 22px;padding: 10px;}
+    .large-2 { text-align: center;}
+    .StepName .backBtn::before {color: #d2ab67 !important}
+}
+
+.seallogo table {margin:auto;}
+
+
+/* End Shell */
+
+
+/* rest css */
+.backBtn::before {line-height: 1.6;}
+.ProductPriceBreackDownLink {text-decoration: underline; color: #d2ab67;}
+.StepName h2 {text-transform: capitalize; color: #d2ab67; font-family: 'myriadpro'; font-size: 28px;}
+.StayBar .ModifyLink a {text-decoration: underline; color: #d2ab67; font-weight: normal; font-size: 18px;}
+.StayBar .ModifyLink a:hover { color:#000000}
+.SearchbyContainer {padding-bottom: 30px;}
+#primary-nav { margin-top: 40px;}
+.ui-datepicker .ui-helper-clearfix {background: #d2ab67; color: #fff; font-family: 'myriadpro'; font-weight: normal; font-size: 16px;}
+.tSmall { font-family: Arial,Tahoma;}
+a.UnselectedLink {border: 1px solid #d2ab67;}
+.HasImage .HeaderPriceBtn { background: #efefef;}
+/* end rest css */
