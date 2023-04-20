@@ -4795,6 +4795,7 @@
     <Content Include="Areas\Admin\Views\Account\AccountLogin.cshtml" />
     <Content Include="Areas\Admin\Views\TableExample\Index.cshtml" />
     <Content Include="Areas\Admin\Views\DichVu_SD\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTiet_Phong\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
